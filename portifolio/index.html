@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio Profissional</title>
+
+    <!-- Tags de SEO e Redes Sociais -->
+    <meta name="description" content="Portfólio de desenvolvimento trazendo projetos e trajetória profissional.">
+    <meta property="og:title" content="Portfólio Profissional">
+    <meta property="og:description" content="Construindo minha trajetória na tecnologia com determinação e foco em evolução constante.">
+    <meta property="og:image" content="./assets/img/foto-portifolio.jpg">
+
+    <!-- Fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Animações AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Ícones Phosphor -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
+
+    <!-- Estilos Globais -->
+    <link rel="stylesheet" href="./assets/img/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- 1. Cartão do Usuário -->
+        <section class="user card"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out">
+
+            <picture>
+                <img src="./assets/img/foto-portifolio.jpg" alt="Foto de perfil de Vitória">
+            </picture>
+
+            <div class="user-content">
+
+                <h1>Vitoria Eduarda Rocha da Silva</h1>
+
+                <p>Desenvolvedora Front-End</p>
+
+                <!-- Links das Redes Sociais -->
+                <div class="social">
+
+                    <!-- GitHub -->
+                    <a
+                        href="https://github.com/vitoriaeduardarocha1312-art"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                        title="Meu GitHub"
+                        aria-label="Acessar meu GitHub">
+
+                        <i class="ph ph-github-logo"></i>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a
+                        href="https://www.linkedin.com/in/vitoriarochadev02/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                        title="Meu LinkedIn"
+                        aria-label="Acessar meu LinkedIn">
+
+                        <i class="ph ph-linkedin-logo"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 2. Seção Sobre Mim -->
+        <section class="about card"
+            id="about"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out">
+
+            <h2 class="subtitle">Sobre mim</h2>
+
+            <p>
+                Sou uma pessoa dedicada, esforçada e movida por desafios.
+                Gosto de lidar com pessoas, de atendimento ao público e de
+                tudo que me permite aprender, evoluir e descobrir novas possibilidades.
+            </p>
+
+            <p>
+                Entrei na área da programação em busca de viver algo novo.
+                Nunca imaginei que me interessaria por esse universo, pois era
+                uma área que, até então, não fazia parte dos meus planos.
+                Mas decidi me dar uma oportunidade, sair da minha zona de
+                conforto e descobrir do que seria capaz.
+            </p>
+
+            <p>
+                Acredito muito no meu potencial e na importância de correr
+                atrás daquilo em que acredito. Quando me proponho a fazer algo,
+                procuro dar o meu melhor, com dedicação, persistência e vontade
+                de aprender cada vez mais.
+            </p>
+
+            <p>
+                Gosto de me colocar à prova, enfrentar novos desafios e provar
+                para mim mesma que sou capaz de ir além do que imaginava.
+                Estou construindo minha trajetória na tecnologia com curiosidade,
+                determinação e a vontade constante de evoluir, tanto
+                profissionalmente quanto pessoalmente.
+            </p>
+
+        </section>
+
+        <!-- 3. Seção de Projetos -->
+        <section class="projects card"
+            id="projects"
+            data-aos="fade-up"
+            data-aos-duration="800">
+
+            <h2 class="subtitle">Projetos</h2>
+
+            <div id="projects-content" class="projects-content"></div>
+
+        </section>
+
+    </div>
+
+    <!-- Scripts de Animação -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out'
+        });
+    </script>
+
+    <!-- JavaScript do Portfólio -->
+    <script src="./assets/img/src/script.js"></script>
+
+</body>
+</html>

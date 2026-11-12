@@ -1,0 +1,141 @@
+/* Reset Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-body: #121214;
+  --background-card: #202024;
+  --color-primary: #e1e1e6;
+  --color-secondary: #a8a8b3;
+  --color-link: #8257e5;
+  --shadow-card: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background-color: var(--background-body);
+  color: var(--color-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+/* Container Principal em Grid */
+.app {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  gap: 48px;
+  max-width: 1366px;
+  margin: 100px auto;
+  padding: 0 24px;
+}
+
+/* Estilo Base dos Cards */
+.card {
+  background-color: var(--background-card);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  padding: 32px;
+}
+
+/* Ajuste da Seção de Projetos para Ocupar 2 Colunas */
+.projects {
+  grid-column: 1 / 3;
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Perfil do Usuário */
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.user picture img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.user-content h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.user-content p {
+  color: var(--color-secondary);
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+/* Redes Sociais */
+.social {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-body);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 22px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-link:hover {
+  background-color: var(--color-link);
+  color: #ffffff;
+  transform: translateY(-4px);
+}
+
+/* Seção Sobre Mim */
+.about p {
+  line-height: 1.6;
+  color: var(--color-primary);
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+/* Grid de Projetos Dinâmicos */
+.projects-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Responsividade para Tablets e Telas Menores */
+@media (max-width: 992px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    grid-column: 1 / 2;
+  }
+
+  .projects-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .projects-content {
+    grid-template-columns: 1fr;
+  }
+}

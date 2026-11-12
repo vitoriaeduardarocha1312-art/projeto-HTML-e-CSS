@@ -1,0 +1,138 @@
+/* Reset Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #2b1a23; /* Tom escuro levemente rosado para destacar a caixa */
+}
+
+/* Container Principal */
+main {
+    display: flex;
+    margin: 90px auto;
+    height: 720px;
+    width: 1484px;
+    justify-content: center;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.45);
+    border-radius: 10px 0 0 10px;
+}
+
+/* Seção da Imagem Lateral */
+.primeiro img {
+    height: 720px;
+    width: 742px;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+
+/* Seção do Formulário (Lado Direito) */
+.segundo {
+    width: 742px;
+    padding: 30px 120px;
+    height: 720px;
+    background-color: #ffffff;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Título em Rosa Accent */
+.title h1 {
+    color: #d84b75;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+.input-box label,
+.box label {
+    color: #333333;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Organização dos Inputs */
+.input-group-1 {
+    display: flex;
+    margin-top: 10px;
+    gap: 30px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    width: 100%;
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #f2cfd9;
+    box-shadow: 1px 1px 6px rgba(216, 75, 117, 0.1);
+    border-radius: 10px;
+    font-size: 0.85rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: #d84b75;
+}
+
+/* Checkbox */
+.box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.box input[type="checkbox"] {
+    accent-color: #d84b75;
+}
+
+/* Botão Enviar em Rosa */
+button {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.8rem 1.2rem;
+    background-color: #d84b75;
+    border: none;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0px 10px 30px -10px rgba(216, 75, 117, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b8385e;
+}
+
+/* Opções Sociais / Rodapé */
+.login {
+    text-align: center;
+    color: #666666;
+}
+
+.login a {
+    color: #d84b75;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+.login-img {
+    width: 50px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+    object-fit: contain;
+}

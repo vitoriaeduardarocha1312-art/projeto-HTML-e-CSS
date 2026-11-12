@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <!-- Fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="[suspicious link removed]">
+    <link rel="preconnect" href="[suspicious link removed]" crossorigin>
+    <link href="[suspicious link removed]" rel="stylesheet">
+    <!-- Vinculação do CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <!-- Primeira seção: Imagem lateral -->
+        <section class="primeiro">
+            <img src="./assets/img/Garota de Fones em Fundo Rosa.png" alt="Garota de Fones em Fundo Rosa">
+        </section>
+
+        <!-- Segunda seção: Formulário -->
+        <section class="segundo">
+            <div class="form">
+                <form action="">
+                    <div class="title">
+                        <h1>Inscreva-se</h1>
+                    </div>
+
+                    <div class="input-group">
+                        <!-- Inputs em linha: Nome e Sobrenome -->
+                        <div class="input-group-1">
+                            <div class="input-box">
+                                <label for="firstName">Nome</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Digite o seu nome" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="lastName">Sobrenome</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Digite o seu sobrenome" required>
+                            </div>
+                        </div>
+
+                        <!-- DEMAIS INPUTS -->
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="confirmPassword">Confirme sua senha</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="box">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Desejo receber novidades por e-mail</label>
+                        </div>
+                    </div>
+
+                    <!-- Botão de envio -->
+                    <div class="button">
+                        <button type="submit">Inscreva-se</button>
+                    </div>
+                </form>
+
+                <!-- Rodapé do formulário / Opções de login -->
+                <footer>
+                    <div class="login">
+                        <p>Ou</p>
+                        <img src="./assets/img/google.png" alt="Login com Google" class="login-img">
+                        <img src="./assets/img/Ícone do Facebook em Fundo Transparente.png" alt="Login com Facebook" class="login-img">
+                        <p>Já possui conta? <a href="#">Login</a></p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
