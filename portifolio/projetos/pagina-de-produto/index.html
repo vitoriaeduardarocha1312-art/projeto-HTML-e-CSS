@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tech Store - Fone de Ouvido Bluetooth</title>
+
+    <!-- Biblioteca de Ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Estilos Customizados -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho / Navegação Superior -->
+    <header>
+        <div class="top-bar">
+
+            <!-- Logo da Loja -->
+            <div class="logo">
+                <i class="fas fa-headphones-alt"></i>
+                <h1>Tech Store</h1>
+            </div>
+
+            <!-- Links de Categorias -->
+            <nav class="nav">
+                <a href="#">Computadores</a>
+                <a href="#">TVs</a>
+                <a href="#">Acessórios</a>
+                <a href="#">Promoções</a>
+            </nav>
+
+            <!-- Busca e Login do Usuário -->
+            <div class="user-options">
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                    Login / Cadastro
+                </a>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar produto...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal do Produto -->
+    <main class="container">
+
+        <div class="product-details">
+
+            <!-- Galeria de Imagens do Produto -->
+            <div class="product-gallery">
+
+                <div class="main-image-container">
+                    <img
+                        id="main-product-img"
+                        src="img/fone2.jpg"
+                        alt="Fone de Ouvido Bluetooth Azul"
+                    >
+                </div>
+
+                <div class="gallery-thumbnails">
+                    <img
+                        src="img/fone2.jpg"
+                        class="active-thumb"
+                        data-color="azul"
+                        alt="Fone Azul"
+                    >
+
+                    <img
+                        src="img/fone3.jpg"
+                        data-color="bege"
+                        alt="Fone Bege"
+                    >
+
+                    <img
+                        src="img/fone1.jpg"
+                        data-color="preto"
+                        alt="Fone Preto"
+                    >
+                </div>
+
+            </div>
+
+            <!-- Informações do Produto -->
+            <div class="product-info">
+
+                <p class="product-path">
+                    Tecnologia
+                    <i class="fas fa-chevron-right"></i>
+                    Fones sem fio
+                </p>
+
+                <h2 id="product-title">
+                    Fone de Ouvido Bluetooth High-End
+                </h2>
+
+                <p class="product-code">
+                    Código: 987SDX-1
+                </p>
+
+                <p class="price">R$ 350,00</p>
+
+                <!-- Avaliação por Estrelas -->
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                    <span>(45 avaliações)</span>
+                </p>
+
+                <p class="product-description">
+                    Fone de ouvido wireless com cancelamento ativo de ruído,
+                    malha respirável na haste para máximo conforto e bateria
+                    de longa duração para o dia a dia.
+                </p>
+
+                <!-- Opções de Seleção de Cor e Quantidade -->
+                <div class="product-options">
+
+                    <label for="color">Cor:</label>
+
+                    <select id="color">
+                        <option value="azul">Azul Celestial</option>
+                        <option value="bege">Bege Starlight</option>
+                        <option value="preto">Preto Space Gray</option>
+                    </select>
+
+                    <label for="quantity">Quantidade:</label>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        value="1"
+                        min="1"
+                        max="10"
+                    >
+
+                </div>
+
+                <!-- Botões de Compra e Lista de Desejos -->
+                <div class="buttons">
+
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Adicionar ao Carrinho
+                    </button>
+
+                    <button class="add-to-wishlist">
+                        <i class="fas fa-heart"></i>
+                        Adicionar à Lista de Desejos
+                    </button>
+
+                </div>
+
+                <!-- Frete e Entrega -->
+                <p class="delivery">
+                    <i class="fas fa-truck"></i>
+                    Estimativa de entrega: Consulte nossos termos e condições.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Abas de Especificações Técnicas -->
+        <div class="product-specs">
+
+            <ul class="tabs">
+
+                <li class="tab-item active">
+                    <i class="fas fa-info-circle"></i>
+                    Detalhes
+                </li>
+
+                <li class="tab-item">
+                    <i class="fas fa-undo"></i>
+                    Devolução
+                </li>
+
+                <li class="tab-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    Entrega
+                </li>
+
+            </ul>
+
+            <div class="specs-content">
+
+                <p>
+                    <strong>SKU:</strong> 987SDX-1
+                </p>
+
+                <p>
+                    <strong>Material Externo:</strong>
+                    Plástico ABS e Alumínio Anodizado
+                </p>
+
+                <p>
+                    <strong>Bateria:</strong>
+                    Até 20 horas de autonomia
+                </p>
+
+                <p>
+                    <strong>Conectividade:</strong>
+                    Bluetooth 5.0
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="src/script.js"></script>
+
+</body>
+</html>

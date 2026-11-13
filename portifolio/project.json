@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Formulário de Cadastro",
+    "link": "./projetos/formulario-de-cadastro/index.html",
+    "image": "./assets/img/formulario.png",
+    "tags": ["HTML", "CSS", "Responsividade"]
+  },
+  {
+    "name": "Tech Store - Fone Bluetooth",
+    "link": "./projetos/pagina-de-produto/index.html",
+    "image": "./assets/img/marca-fone.jpeg",
+    "tags": ["HTML", "CSS", "JavaScript"]
+  }
+]
